@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devise converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="baseCurrency">
+        <div id="card-container">
+          <div class="card">
+            <label for="currency-select">Montant:</label>
+            <input type="number" id="inputCurrency" placeholder="0" />
+          </div>
+
+          <div class="card">
+            <label for="devise-select">Devise:</label>
+            <select name="devise" id="devise-select">
+              <option class="devise-option" value="EUR">EUR</option>
+            </select>
+          </div>
+
+          <div class="card">
+            <label for="wanted-devise">Convertir en:</label>
+            <select name="devise" id="devise-toGet">
+              <option class="devise-option" value="USD">USD</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" id="submit">Convertir</button>
+      </div>
+
+      <div>
+        <p id="convertedCUrrency"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
